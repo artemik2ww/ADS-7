@@ -29,7 +29,6 @@ int Train::getLength() {
         current = current->next;
         stepsToCurrent++;
         countOp++;
-
         if (current->light) {
             current->light = false;
             Car* returnPointer = current;
