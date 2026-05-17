@@ -31,7 +31,7 @@ int Train::getLength() {
         countOp++;
         if (current->light) {
             current->light = false;
-            Car* returnPointer = current;
+            const Car* returnPointer = current;
             for (int i = 0; i < stepsToCurrent; i++) {
                 returnPointer = returnPointer->prev;
                 countOp++;
